@@ -1,0 +1,25 @@
+.login-container {
+  width: 25%;
+  margin-top: 10%;
+  background-color: pink;
+  margin-left: 35%;
+  height: 30vh;
+}
+
+.login-container label {
+  margin-top: 20px;
+  width: 87px;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.login-container input {
+  border-style: none;
+}
+
+.login-container button {
+  background-color: blue;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=login.component.css.map */

@@ -1,0 +1,22 @@
+.login-container {
+    width:25%;
+    margin-top: 10%;
+    background-color: pink;
+    margin-left: 35%;
+    height: 30vh;
+
+    label {
+        margin-top: 20px;
+        width: 87px;
+        padding-left: 20px;
+        display: inline-block;
+    }
+    input {
+        border-style: none;
+    }
+    button {
+        background-color: blue;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+}
