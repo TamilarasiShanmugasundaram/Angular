@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="left-container">
+      <div>
+        <ul id="user-category" >
+          <li *ngFor="let categories of category">           
+            <i class={{categories.symbol}} ></i>
+            <span> {{categories.title}}  </span>
+          </li>
+        </ul>    
+      </div>
+      <div class="new">
+        <i class="fas fa-plus"></i>
+        <input   (keyup)="onSubmit($event)" 
+        [(ngModel)]="inputValue" type="text" 
+        id="searchKey" class="form-control" placeholder="New list">
+      </div >
+    </div>
+</div>

@@ -1,0 +1,51 @@
+.left-container {
+    height:92vh;
+    background-color:#F4F4F4;
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    white-space: normal;
+    margin-left: -125px;
+    
+    ul {
+        padding: 0;
+        li:hover {
+        background-color: white;
+    }    
+        li {
+            height: 7vh;
+            list-style: none;
+            padding-left: 40px;
+           span {
+               padding-left: 10px;
+           }
+           i {
+               padding-top: 15px;
+           }
+        }
+    }
+    .new:hover {
+        background-color: white;
+    }
+    .new {
+        input:hover {
+            background-color: white;
+        }
+        input:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        input {
+            border-style:none;
+            background-color: #F4F4F4;
+            display: inline-block;
+            width:70%;
+            height:7vh;
+            padding-left: 15px;
+        }
+        i {
+            padding-left: 38px;
+        }
+    } 
+
+}

@@ -4,8 +4,14 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class LoginService {
+  
+  private userName : string = "";
+  private password : string = "";
 
-  constructor() { }
+  // constructor(userName:string, password:string) {
+  //   this.userName = userName;
+  //   this.password = password;
+  //  }
 
   getUserName() {
     return 'tamil';

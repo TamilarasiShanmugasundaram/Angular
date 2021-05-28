@@ -1,0 +1,71 @@
+:root {
+  --white: white;
+  --lightslategray: lightslategray;
+  --blue: blue;
+  --header-background: #2596be;
+  --skyblue: lightskyblue;
+  --container-background: #F4F4F4;
+}
+
+.d-block {
+  display: inline-block;
+}
+
+.bg-primary {
+  height: 50px;
+}
+
+.bg-primary .app {
+  color: white;
+  padding-left: 20px;
+  padding-top: 15px;
+  display: inline-block;
+  width: 30%;
+}
+
+.bg-primary .todo {
+  color: white;
+  padding-left: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.bg-primary .d-input {
+  background-color: skyblue;
+  display: inline-block;
+  width: 25%;
+}
+
+.bg-primary .d-input i {
+  color: white;
+  display: inline-block;
+  padding-left: 7px;
+}
+
+.bg-primary .input-field:hover {
+  outline: none;
+}
+
+.bg-primary .input-field {
+  display: inline-block;
+  border: none;
+  height: 25px;
+  background-color: lightskyblue;
+  width: 90%;
+  padding-left: 10px;
+}
+
+.bg-primary .setting {
+  color: white;
+  padding-left: 35%;
+  padding-top: 15px;
+  display: inline-block;
+}
+
+.bg-primary .question {
+  color: white;
+  padding-left: 20px;
+  padding-top: 15px;
+  display: inline-block;
+}
+/*# sourceMappingURL=header.component.css.map */
