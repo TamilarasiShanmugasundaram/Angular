@@ -8,6 +8,7 @@ import { LoginService } from './login.service';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { TodoModule } from './todo/todo.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TodoModule } from './todo/todo.module';
     BrowserModule,                             
     AppRoutingModule,
     FormsModule,
-    TodoModule
+    TodoModule,
+    RouterModule
     //ReactiveFormsModule
   ],
   // providers: [MyserviceService],

@@ -9,10 +9,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   constructor( private router: ActivatedRoute){ }
-   queryParam: string = '';
+   s: string = '';
     ngOnInit() {
       this.router.queryParams.subscribe(params => {
-        this.queryParam = params['val'];
+        this.s = params['val'];
       });
     }
   }

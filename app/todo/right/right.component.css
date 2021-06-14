@@ -1,8 +1,128 @@
-.red {
-  background-color: red;
+.corner-container {
+  overflow-y: auto;
+  height: 92vh;
+  white-space: normal;
+  width: 90%;
+  margin-left: 20px;
+  background-color: #F4F4F4;
+  display: inline-block;
 }
 
-.blue {
-  background-color: blue;
+.corner-container li {
+  list-style: none;
+}
+
+.corner-container .top-div-In-corner {
+  background-color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.corner-container .task-title-In-step {
+  padding-top: 10px;
+}
+
+.corner-container .task-title-In-step span {
+  display: inline-block;
+  font-family: sans-serif;
+  padding-left: 10px;
+}
+
+.corner-container .task-title-In-step .fa-star {
+  color: skyblue;
+}
+
+.corner-container .task-title-In-step .taskIncomplete {
+  width: 80%;
+}
+
+.corner-container .task-title-In-step .taskComplete {
+  width: 80%;
+  text-decoration: line-through;
+}
+
+.corner-container .user-step {
+  margin: unset;
+}
+
+.corner-container .user-step li {
+  height: 6vh;
+}
+
+.corner-container .user-step li span {
+  display: inline-block;
+  width: 80%;
+  padding-left: 5px;
+}
+
+.corner-container .new-step span {
+  padding-left: 5px;
+}
+
+.corner-container .new-step input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.corner-container .new-step input {
+  background-color: white;
+  border-style: none;
+  width: 90%;
+  display: inline-block;
+  height: 5vh;
+}
+
+.corner-container .new-step i {
+  display: inline-block;
+}
+
+.corner-container .static-options {
+  height: 27vh;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.corner-container .static-options span {
+  padding-right: 50%;
+  padding-bottom: 15px;
+  font-family: sans-serif;
+  border-bottom: 1px solid;
+  border-bottom-color: lightslategray;
+  padding-left: 10px;
+}
+
+.corner-container .static-options i {
+  padding-left: 10px;
+  padding-top: 25px;
+}
+
+.corner-container .my-day-static {
+  height: 5xvh;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.corner-container .my-day-static i {
+  padding-top: 13px;
+  padding-left: 10px;
+}
+
+.corner-container .my-day-static span {
+  font-family: sans-serif;
+  padding-left: 15px;
+}
+
+.corner-container .empty-file {
+  height: 10vh;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.corner-container .task-star {
+  color: skyblue;
 }
 /*# sourceMappingURL=right.component.css.map */

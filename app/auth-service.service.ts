@@ -19,11 +19,10 @@ export class AuthServiceService {
     if(uname == this.userName  && password == this.password ) {
       this.isAuthenticate = true;
       // this.router.navigate(['/home'], { queryParams: { val: uname }});
-      this.router.navigate(['/header']);
+      this.router.navigate(['/page'], { queryParams: { val: false }});
     } else {
       alert("Invalid user");
-      this.router.navigate(['/right']);
-      
+      this.router.navigate(['']);      
     }   
   }
 

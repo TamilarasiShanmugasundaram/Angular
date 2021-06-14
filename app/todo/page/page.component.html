@@ -1,4 +1,21 @@
-<app-header></app-header>
-<app-left></app-left>
-<app-center></app-center>
-<app-right></app-right>
+<!-- 
+  <app-header></app-header>
+  <app-left></app-left>
+  <app-center *ngIf="dataModel.tasks != ''"></app-center>
+  <app-right *ngIf="dataModel.step != ''"></app-right> -->
+  <app-header></app-header>
+  
+    <div class="row" style="margin: unset;">
+
+        <div class ="col-2">
+ 
+          <app-left></app-left>
+        </div>
+        <div class="col">
+          <app-center *ngIf="dataModel.tasks != ''"></app-center>
+        </div>
+        <div class="col-3">
+          <app-right *ngIf="dataModel.step != ''"></app-right> 
+        </div>   
+    </div>
+  

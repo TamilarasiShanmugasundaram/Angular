@@ -1,6 +1,114 @@
-.red {
-    background-color: red;
-}
-.blue {
-    background-color: blue;
+
+.corner-container {
+    overflow-y: auto;
+    height:92vh;
+    white-space: normal;
+    width: 90%;
+    margin-left: 20px;
+    background-color:#F4F4F4;
+    display: inline-block;
+    
+    li {
+        list-style: none;
+    }
+    .top-div-In-corner {
+        background-color: white;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .task-title-In-step {
+        padding-top: 10px;
+        span {
+           display: inline-block;
+            font-family: sans-serif;
+            padding-left: 10px;
+        }
+        .fa-star {
+            color:skyblue;
+        }
+        .taskIncomplete {
+            width: 80%;
+        }
+        .taskComplete {
+            width: 80%;
+            text-decoration: line-through;
+        }
+    }
+    .user-step {
+        margin: unset;
+        li {
+            height: 6vh;
+            span {
+                display: inline-block;
+                width: 80%;
+                padding-left: 5px;
+            }
+        }
+    
+    }
+    .new-step {
+        span {
+            padding-left: 5px;
+        }
+        input:focus {
+           outline: none;
+           box-shadow: none;
+        }
+        input {
+            background-color: white;
+            border-style: none;
+            
+            width: 90%;
+            display: inline-block;
+            //padding-left: 10px;
+            height: 5vh;
+        }
+        i {
+            display: inline-block;
+        }
+    }
+
+    .static-options {
+        height: 27vh;
+        margin-left: 10px;
+        margin-top: 20px;
+        background-color: white; 
+        span {
+            padding-right: 50%;
+            padding-bottom: 15px;
+            font-family: sans-serif;
+            border-bottom: 1px solid;
+            border-bottom-color: lightslategray; 
+            padding-left: 10px;
+            
+        }
+        i {
+            padding-left: 10px;
+            padding-top: 25px;
+        } 
+    }
+    .my-day-static {
+        height: 5xvh;
+        
+        margin-left: 10px;
+        margin-top: 20px;
+        background-color: white;
+        i {
+            padding-top: 13px;
+            padding-left: 10px;
+        }
+        span {
+            font-family: sans-serif;
+            padding-left: 15px;
+        }
+    }
+    .empty-file {
+        height: 10vh;    
+        margin-left: 10px;
+        margin-top: 20px;
+        background-color: white;
+    }
+    .task-star {
+        color: skyblue;
+    }
 }

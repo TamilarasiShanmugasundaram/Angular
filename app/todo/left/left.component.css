@@ -2,14 +2,12 @@
   height: 92vh;
   background-color: #F4F4F4;
   display: inline-block;
-  width: 25%;
-  vertical-align: top;
   white-space: normal;
-  margin-left: -125px;
 }
 
 .left-container ul {
   padding: 0;
+  list-style-type: none;
 }
 
 .left-container ul li:hover {
@@ -18,7 +16,6 @@
 
 .left-container ul li {
   height: 7vh;
-  list-style: none;
   padding-left: 40px;
 }
 
