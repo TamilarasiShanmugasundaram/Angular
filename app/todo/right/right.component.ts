@@ -22,18 +22,17 @@ ngOnInit(): void {
 id = 1;
 task  = this.dataModel.task;
 step = [
-  {title:'', id:this.id++, stepName :this.stepname,isImportant:false, isCompleted:false}
+  {title:'', id:0, stepName :this.stepname,isImportant:false, isCompleted:false}
 ];
 
 
 onSubmit($event:any){
-  if($event.keyCode === 13 && this.stepname!= '' ){
+  if($event.keyCode === 13 && this.stepname != '' ){
     if( this.dataModel.step != "Important") {
-      
       const item = {
         title :  this.stepname,
         id : this.id++,
-        stepName : this.dataModel.step,
+        stepName :  this.dataModel.step,
         isImportant : false,
         isCompleted : false
       }
@@ -41,11 +40,10 @@ onSubmit($event:any){
       this.stepname = '';
     }
     else {
-      
       const item = {
-        title :  this.stepname,
+        title : this.stepname,
         id : this.id++,
-        stepName : this.dataModel.step,
+        stepName :  this.dataModel.step,
         isImportant : true,
         isCompleted : false
       }

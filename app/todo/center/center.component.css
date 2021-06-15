@@ -41,12 +41,10 @@ li {
 
 li .taskIncomplete {
   width: 90px;
-  border: solid;
 }
 
 li .taskComplete {
   width: 90px;
-  border: solid;
   text-decoration: line-through;
 }
 /*# sourceMappingURL=center.component.css.map */

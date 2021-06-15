@@ -47,19 +47,30 @@ export class CenterComponent implements OnInit {
   }
 
   clickTaskName(param:any) {
-    this.dataModel.renderStep(param); 
+    this.dataModel.renderStep(param);
   }
 
   clickStarIcon(param:any) {
     for(let tasks of this.dataModel.task) {
       if(tasks.title == param) {
         if(tasks.isImportant == true) {
-          tasks.isImportant = false;
-          alert("imp")
+          tasks.isImportant = false;  
+          if(tasks.categoryName == "Important") {
+            this.dataModel.task.splice(tasks.id,1);
+          } else {
+            for(let userTasks of this.dataModel.task) { 
+              if(userTasks.categoryName == "Important" && userTasks.title == param) {
+                this.dataModel.task.splice(userTasks.id,1);
+                tasks.isImportant = false;
+              }
+            }
+            break;
+          }
+       
           
         } else  {
-          tasks.isImportant = true;          
-          alert("not imp")
+          console.log("false")
+          tasks.isImportant = true;    
           const item = {
             title :  param,
             id : this.id++,
@@ -68,7 +79,9 @@ export class CenterComponent implements OnInit {
             isCompleted : false
           }
           this.dataModel.task.push(item);
+          break;
         }   
+        
       }
     }
   }

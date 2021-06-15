@@ -2,35 +2,36 @@
  <div class="corner-container" id="corner-container">
     <div class="top-div-In-corner" id="top-div-In-corner">
       <li *ngFor="let tasks of task"> 
-      <div class =  "task-title-In-step" id="task-title-In-step" *ngIf="dataModel.taskName == tasks.title">        
+      <div class =  "task-title-In-step" id="task-title-In-step" *ngIf="tasks.id == dataModel.flag">       
         <input type="radio" *ngIf="tasks.isCompleted == true" checked  (click)="clickRadioButton(tasks.title)">
             <input type="radio" *ngIf="tasks.isCompleted != true"  (click)="clickRadioButton(tasks.title)">  
             <span [ngClass]="{
               'taskComplete':tasks.isCompleted == true,
               'taskIncomplete':tasks.isCompleted == false
             }"
-          (click)="clickTaskName(tasks.title)"> {{tasks.title}}  </span>
+          (click)="clickTaskName(tasks.title)"> {{dataModel.step}}  </span>
           <i class="fa fa-star icon" *ngIf="tasks.isImportant == true" (click)="clickStarIcon(tasks.title)"></i> 
           <i class="far fa-star icon" *ngIf="tasks.isImportant == false" (click)="clickStarIcon(tasks.title)"></i> 
         </div>
-        </li>
-          
-          
+        </li>     
 
       
       <ul class = "user-step" id="user-step">
-        <li *ngFor="let tasks of step">   
-            <div *ngIf="dataModel.step == tasks.stepName">
-                <input type="radio" *ngIf="tasks.isCompleted == true" checked  (click)="clickRadioButton(tasks.title)">
-                <input type="radio" *ngIf="tasks.isCompleted != true"  (click)="clickRadioButton(tasks.title)">
+        <li *ngFor="let steps of step">   
+          <!-- <p>{{steps.stepName}}</p>
+          <p>{{dataModel.step}}</p> -->
+            <div *ngIf="dataModel.step == steps.stepName">
+               
+                <input type="radio" *ngIf="steps.isCompleted == true" checked  (click)="clickRadioButton(steps.title)">
+                <input type="radio" *ngIf="steps.isCompleted != true"  (click)="clickRadioButton(steps.title)">
                 <span [ngClass]="{
-                    'taskComplete':tasks.isCompleted == true,
-                    'taskIncomplete':tasks.isCompleted == false
+                    'taskComplete':steps.isCompleted == true,
+                    'taskIncomplete':steps.isCompleted == false
                   }"
-                (click)="clickTaskName(tasks.title)"> {{tasks.title}}  </span>
-                <i class="fa fa-star icon" *ngIf="tasks.isImportant == true" (click)="clickStarIcon(tasks.title)"></i> 
-                <i class="far fa-star icon" *ngIf="tasks.isImportant == false" (click)="clickStarIcon(tasks.title)"></i> 
-            </div>         
+                (click)="clickTaskName(steps.title)"> {{steps.title}}  </span>
+                <i class="fa fa-star icon" *ngIf="steps.isImportant == true" (click)="clickStarIcon(steps.title)"></i> 
+                <i class="far fa-star icon" *ngIf="steps.isImportant == false" (click)="clickStarIcon(steps.title)"></i> 
+                </div>     
         </li>  
       </ul>     
 

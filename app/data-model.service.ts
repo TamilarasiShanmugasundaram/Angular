@@ -12,8 +12,9 @@ export class DataModelService {
   taskName: string = '';
   step: string = '';
   id = 1;
+  flag :number = 0 ;
   task = [
-    {title:'', id:this.id++, categoryName :this.categoryName,isImportant:false, isCompleted:false}
+    {title:'', id:0, categoryName :this.categoryName,isImportant:false, isCompleted:false}
   ];
 
 
@@ -22,6 +23,11 @@ export class DataModelService {
     this.tasks = categoryName;   
   }
   renderStep(taskName : string) {
+    for(let tasks of this.task) {
+      if(tasks.title == taskName) {
+        this.flag = tasks.id;
+      }
+    }
       this.taskName = taskName;
       this.step = taskName;
   }
