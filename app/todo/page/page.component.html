@@ -8,13 +8,12 @@
     <div class="row" style="margin: unset;">
 
         <div class ="col-2">
- 
           <app-left></app-left>
         </div>
         <div class="col">
           <app-center *ngIf="dataModel.tasks != ''"></app-center>
         </div>
-        <div class="col-3">
+        <div class="col-3 " >
           <app-right *ngIf="dataModel.step != ''"></app-right> 
         </div>   
     </div>

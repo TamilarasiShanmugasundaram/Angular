@@ -2,7 +2,7 @@
   overflow-y: auto;
   height: 92vh;
   white-space: normal;
-  width: 90%;
+  width: 98%;
   margin-left: 20px;
   background-color: #F4F4F4;
   display: inline-block;
@@ -42,11 +42,12 @@
 }
 
 .corner-container .user-step {
+  padding: 0;
   margin: unset;
 }
 
 .corner-container .user-step li {
-  height: 6vh;
+  height: 5vh;
 }
 
 .corner-container .user-step li span {

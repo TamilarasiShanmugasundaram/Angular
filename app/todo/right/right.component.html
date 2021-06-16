@@ -16,12 +16,10 @@
         </li>     
 
       
-      <ul class = "user-step" id="user-step">
-        <li *ngFor="let steps of step">   
-          <!-- <p>{{steps.stepName}}</p>
-          <p>{{dataModel.step}}</p> -->
-            <div *ngIf="dataModel.step == steps.stepName">
-               
+      <ul class = "user-step" id="user-step" *ngFor="let steps of step">
+        <li  *ngIf="dataModel.step == steps.stepName">   
+            <div>   
+              
                 <input type="radio" *ngIf="steps.isCompleted == true" checked  (click)="clickRadioButton(steps.title)">
                 <input type="radio" *ngIf="steps.isCompleted != true"  (click)="clickRadioButton(steps.title)">
                 <span [ngClass]="{
