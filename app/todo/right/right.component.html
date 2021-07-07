@@ -23,12 +23,13 @@
                 <input type="radio" *ngIf="steps.isCompleted == true" checked  (click)="clickRadioButton(steps.title)">
                 <input type="radio" *ngIf="steps.isCompleted != true"  (click)="clickRadioButton(steps.title)">
                 <span [ngClass]="{
-                    'taskComplete':steps.isCompleted == true,
-                    'taskIncomplete':steps.isCompleted == false
-                  }"
+                    'taskComplete':steps.isCompleted == true  }"
+                    
+                
                 (click)="clickTaskName(steps.title)"> {{steps.title}}  </span>
-                <i class="fa fa-star icon" *ngIf="steps.isImportant == true" (click)="clickStarIcon(steps.title)"></i> 
-                <i class="far fa-star icon" *ngIf="steps.isImportant == false" (click)="clickStarIcon(steps.title)"></i> 
+                <!-- <i class="fa fa-star icon" *ngIf="steps.isImportant == true" (click)="clickStarIcon(steps.title)"></i> 
+                <i class="far fa-star icon" *ngIf="steps.isImportant == false" (click)="clickStarIcon(steps.title)"></i>  -->
+                <i class="fas fa-times"></i>
                 </div>     
         </li>  
       </ul>     

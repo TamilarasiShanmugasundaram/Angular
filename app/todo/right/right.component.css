@@ -13,6 +13,7 @@
 }
 
 .corner-container .top-div-In-corner {
+  width: 91%;
   background-color: white;
   margin-left: 10px;
   margin-top: 10px;
@@ -56,6 +57,11 @@
   padding-left: 5px;
 }
 
+.corner-container .user-step li i {
+  padding-left: 3px;
+  color: lightslategray;
+}
+
 .corner-container .new-step span {
   padding-left: 5px;
 }
@@ -82,6 +88,7 @@
   height: 27vh;
   margin-left: 10px;
   margin-top: 20px;
+  width: 91%;
   background-color: white;
 }
 
@@ -100,9 +107,10 @@
 }
 
 .corner-container .my-day-static {
-  height: 5xvh;
+  height: 7vh;
   margin-left: 10px;
   margin-top: 20px;
+  width: 91%;
   background-color: white;
 }
 
@@ -120,6 +128,7 @@
   height: 10vh;
   margin-left: 10px;
   margin-top: 20px;
+  width: 91%;
   background-color: white;
 }
 
